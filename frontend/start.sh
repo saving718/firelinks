@@ -1,0 +1,1 @@
+winpty docker run --name firelinks_frontend -it --rm -v "${PWD}:/app" -v /app/node_modules -p 80:3000 firelinks
