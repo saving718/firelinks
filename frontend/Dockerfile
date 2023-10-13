@@ -1,8 +1,8 @@
-FROM node:alpine
+FROM node
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY . .
+COPY . /usr/src/app
 
 RUN npm i --legacy-peer-deps
 
