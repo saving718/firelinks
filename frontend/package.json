@@ -7,11 +7,21 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"stylelint": "stylelint \"**/*.scss\" --fix"
+		"stylelint": "stylelint \"**/*.scss\" --fix",
+		"prepare": "husky install"
+	},
+	"lint-staged": {
+		"*.{css,scss}": [
+			"stylelint --fix"
+		],
+		"*.{ts,tsx}": [
+			"eslint"
+		]
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.9.7",
 		"classnames": "^2.3.2",
+		"eslint-plugin-prettier": "^5.0.1",
 		"formik": "^2.4.5",
 		"husky": "^8.0.3",
 		"next": "latest",
@@ -28,8 +38,12 @@
 		"@types/node": "latest",
 		"@types/react": "latest",
 		"@types/react-dom": "latest",
+		"@typescript-eslint/eslint-plugin": "^6.9.1",
 		"eslint": "^8.51.0",
 		"eslint-config-next": "latest",
+		"eslint-config-prettier": "^9.0.0",
+		"husky": "^8.0.0",
+		"lint-staged": "^15.0.2",
 		"stylelint": "^15.10.3",
 		"stylelint-config-standard-scss": "^11.0.0",
 		"stylelint-order": "^6.0.3",

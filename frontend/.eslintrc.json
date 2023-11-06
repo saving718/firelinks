@@ -8,9 +8,9 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:prettier/recommended",
         "plugin:@typescript-eslint/recommended",
-        "next/core-web-vitals"
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -34,13 +34,11 @@
         "no-console":"warn",
         "@typescript-eslint/no-explicit-any": ["off"],
         "@typescript-eslint/no-var-requires": "off",
-        "quotes": ["warn", "double"],
-        "semi": ["error", "always"],
-        "indent": ["warn", "tab"], 
-        "prettier/prettier": [
-            "off",
-            {
-              "endOfLine": "lf"
+        "quotes": ["warn", "single"],
+        "semi": [1, "always"],
+        "prettier/prettier": ["error", 
+            { 
+                "endOfLine": "auto" 
             }
         ]
     }
