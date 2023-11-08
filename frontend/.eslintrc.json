@@ -1,4 +1,4 @@
-{ 
+{
     "env": {
         "browser": true,
         "es2021": true,
@@ -8,9 +8,10 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:prettier/recommended",
         "plugin:@typescript-eslint/recommended",
-        "next/core-web-vitals"
+        "next/core-web-vitals",
+        "plugin:prettier/recommended",
+        "plugin:storybook/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -21,7 +22,7 @@
         "sourceType": "module"
     },
     "globals": {
-        "require" :true
+        "require": true
     },
     "plugins": [
         "react"
@@ -31,16 +32,23 @@
         "react/prop-types": "off",
         "react/display-name": "off",
         "react-hooks/exhaustive-deps": 0,
-        "no-console":"warn",
-        "@typescript-eslint/no-explicit-any": ["off"],
+        "no-console": "warn",
+        "@typescript-eslint/no-explicit-any": [
+            "off"
+        ],
         "@typescript-eslint/no-var-requires": "off",
-        "quotes": ["warn", "double"],
-        "semi": ["error", "always"],
-        "indent": ["warn", "tab"], 
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "semi": [
+            1,
+            "always"
+        ],
         "prettier/prettier": [
-            "off",
+            "error",
             {
-              "endOfLine": "lf"
+                "endOfLine": "auto"
             }
         ]
     }

@@ -1,13 +1,11 @@
 {
 	"extends": [
-    "stylelint-config-standard",
-    "stylelint-order-config-standard"
-  ],
-  "plugins": [
-		"stylelint-order"
+		"stylelint-config-standard-scss",
+		"stylelint-order-config-standard"
 	],
+	"plugins": ["stylelint-order", "stylelint-scss"],
 	"rules": {
 		"color-no-invalid-hex": true,
-    "unit-allowed-list": ["px", "%", "deg", "vw", "s"]
+		"unit-allowed-list": ["px", "%", "deg", "vw", "s"]
 	}
 }
