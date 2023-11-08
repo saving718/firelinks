@@ -2,5 +2,3 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "Check code for lint error..."
-
-# npx lint-staged

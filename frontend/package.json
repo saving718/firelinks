@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "firelinks",
   "version": "0.1.0",
   "private": true,
@@ -61,4 +62,57 @@
     "stylelint-order-config-standard": "^0.1.3",
     "typescript": "latest"
   }
+=======
+	"name": "firelinks",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"stylelint": "stylelint \"**/*.scss\" --fix",
+		"prepare": "husky install"
+	},
+	"lint-staged": {
+		"*.{css,scss}": [
+			"stylelint --fix"
+		],
+		"*.{ts,tsx}": [
+			"eslint"
+		]
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.9.7",
+		"classnames": "^2.3.2",
+		"eslint-plugin-prettier": "^5.0.1",
+		"formik": "^2.4.5",
+		"husky": "^8.0.3",
+		"next": "latest",
+		"next-redux-wrapper": "^8.1.0",
+		"react": "latest",
+		"react-anime": "^4.1.1",
+		"react-dom": "latest",
+		"react-redux": "^8.1.3",
+		"sass": "^1.69.1",
+		"storybook": "^7.4.6",
+		"stylelint-scss": "^5.2.1"
+	},
+	"devDependencies": {
+		"@types/node": "latest",
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"@typescript-eslint/eslint-plugin": "^6.9.1",
+		"eslint": "^8.51.0",
+		"eslint-config-next": "latest",
+		"eslint-config-prettier": "^9.0.0",
+		"husky": "^8.0.0",
+		"lint-staged": "^15.0.2",
+		"stylelint": "^15.10.3",
+		"stylelint-config-standard-scss": "^11.0.0",
+		"stylelint-order": "^6.0.3",
+		"stylelint-order-config-standard": "^0.1.3",
+		"typescript": "latest"
+	}
+>>>>>>> 71fefc94ff01a88d391d499dd53df40ebfc462e2
 }
