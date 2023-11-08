@@ -10,12 +10,8 @@
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "next/core-web-vitals",
-<<<<<<< HEAD
         "plugin:prettier/recommended",
         "plugin:storybook/recommended"
-=======
-        "plugin:prettier/recommended"
->>>>>>> 71fefc94ff01a88d391d499dd53df40ebfc462e2
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
