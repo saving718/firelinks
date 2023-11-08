@@ -3,4 +3,4 @@
 
 echo "Check code for lint error..."
 
-npx lint-staged
+cd ./frontend && npx lint-staged
