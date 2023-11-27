@@ -1,7 +1,3 @@
-import React from 'react';
-
-const MainPage = () => {
-  return <h2>Work</h2>;
-};
+import MainPage from '../pages-flat/MainPage';
 
 export default MainPage;

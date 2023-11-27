@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from '../header';
+import Footer from '../footer';
 
 type LayoutType = {
   children: React.ReactNode;
@@ -7,9 +9,9 @@ type LayoutType = {
 const Layout = ({ children }: LayoutType) => {
   return (
     <>
-      <div>Head</div>
+      <Header></Header>
       <div>{children}</div>
-      <div>Footer</div>
+      <Footer></Footer>
     </>
   );
 };
