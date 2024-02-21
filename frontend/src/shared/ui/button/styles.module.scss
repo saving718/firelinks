@@ -1,0 +1,73 @@
+.btn {
+    width: 100%;
+    
+    color: #fff;
+
+    &--color {
+        &-blue {
+            border-color: #33CAFF;
+            background: #33CAFF;
+        }
+
+        &-transparent {
+            border-color: #fff;
+            background: transparent;
+        }
+    }
+
+    &--width {
+        &-small {
+            max-width: 137px;
+        }
+        
+        &-big {
+            max-width: 238px;
+        }
+    }
+    
+    &--radius {
+        &-0 {
+            border-radius: 0%;
+        }
+
+        &-10 {
+            border-radius: 10%;
+        }
+
+        &-20 {
+            border-radius: 20%;
+        }
+
+        &-30 {
+            border-radius: 30%;
+        }
+        
+        &-40 {
+            border-radius: 40%;
+        }
+
+        &-50 {
+            border-radius: 50%;
+        }
+
+        &-60 {
+            border-radius: 60%;
+        }
+
+        &-70 {
+            border-radius: 70%;
+        }
+
+        &-80 {
+            border-radius: 80%;
+        }
+
+        &-90 {
+            border-radius: 90%;
+        }
+
+        &-100 {
+            border-radius: 100%;
+        }
+    }
+}
