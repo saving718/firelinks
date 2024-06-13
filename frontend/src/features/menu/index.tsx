@@ -12,8 +12,8 @@ type menuType = {
 const Menu = ({ menu }: menuType) => {
   return (
     <ul>
-      {menu.map((menuItem) => (
-        <li key={null}>{menuItem.title}</li>
+      {menu.map((menuItem, i) => (
+        <li key={i}>{menuItem.title}</li>
       ))}
     </ul>
   );
